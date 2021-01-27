@@ -26,6 +26,7 @@ export const SearchList: React.FC<SearchListProps> = ({ profiles = [] }) => {
   useBottomScrollListener(handleBottom);
   return (
     <SearchWrapper>
+      {profiles.length === 0 && <div>No profiles</div>}
       {profiles.slice(0, renderCount).map(profile => (
         <ProfileDetail profile={profile} key={`profile_${profile.id}`} />
       ))}

@@ -43,7 +43,7 @@ function App() {
         <Header />
         <ContentContainer>
           <AppDescription />
-          <Input placeholder="Type a name..." value={searchKey} onChange={handleChange} />
+          <Input placeholder="Type a name..." value={searchKey} onChange={handleChange} data-testid="search_input" />
           <SearchList profiles={renderingData} />
         </ContentContainer>
       </Container>
