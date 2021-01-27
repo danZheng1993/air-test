@@ -55,7 +55,7 @@ const ProfileWrapper = styled.div`
 
 export const ProfileDetail: React.FC<ProfileDetailProps> = ({ profile }) => (
   <ProfileWrapper>
-    <AvatarImage src={profile.avatar} />
+    <AvatarImage src={profile.avatar} alt={`profile_${profile.id}`} />
     <ProfileContent>
       <ProfileName>{profile.name}</ProfileName>
       <ProfileDescription>{profile.description}</ProfileDescription>
