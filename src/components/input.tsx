@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Input = styled.input`
+  box-sizing: border-box;
   height: 40px;
   width: 100%;
   background-color: ${({ theme }) => theme.secondaryBgColor};

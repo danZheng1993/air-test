@@ -16,6 +16,11 @@ const HeaderWrapper = styled.div`
   padding-left: 132px;
   
   border-top: 3px solid ${({ theme }) => theme.borderColor};
+
+  @media (max-width: 1023px) {
+    padding-left: 0;
+    justify-content: center;
+  }
 `;
 
 const Logo = styled.img`
